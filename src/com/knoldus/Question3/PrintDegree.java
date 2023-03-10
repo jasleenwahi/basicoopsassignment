@@ -7,7 +7,7 @@ class Degree
         System.out.println("I got a degree");
     }
 }
-class Undergreaduate extends Degree
+class Undergraduate extends Degree
 {
     public void getDegree()
     {
@@ -26,9 +26,11 @@ public class PrintDegree
 {
     public static void main(String args[])
     {
-        Undergreaduate undergreaduateStudent = new Undergreaduate();
+        Degree degree = new Degree();
+        Undergraduate undergraduateStudent = new Undergraduate();
         Postgraduate postgraduateStudent = new Postgraduate();
-        undergreaduateStudent.getDegree();
+        degree.getDegree();
+        undergraduateStudent.getDegree();
         postgraduateStudent.getDegree();
     }
 }
